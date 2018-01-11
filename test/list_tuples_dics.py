@@ -1,7 +1,18 @@
 test = 'hello world'
-
+print(test[:]) # prints out the whole list
 print(test[2:5])
 print(test[6:15])
+
+# Nested List
+n_list = ["Happy", [2,0,1,5]]
+
+# Nested indexing
+
+# Output: a
+print(n_list[0][1]) #meaning take first element 0 and of that element the element 1
+
+# Output: 5
+print(n_list[1][3])
 
 list = ['abcd', 123, 'john', 23, 43, 'test']
 tinylist = ['test2', 567]

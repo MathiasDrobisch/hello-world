@@ -19,6 +19,6 @@ def get_total_cost_of_meal():
 # Print your result
 print("The total meal cost is " + get_total_cost_of_meal() + " dollars.")
 
-n = input()
+n = int(input())
 for i in range(n):
     print(i**2)
