@@ -173,3 +173,14 @@ INSERT INTO cd.facilities (facid,name, membercost, guestcost, initialoutlay, mon
 UPDATE cd.facilities
 SET initialoutlay = 10000
 WHERE facid = 1;
+
+--AGGREGATES
+SELECT facid,
+       sum(slots)
+FROM cd.facilities
+LEFT JOIN cd.bookings USING (facid)
+WHERE --to_char(starttime, 'YYYY-MM') = '2012-09'
+starttime >= '2012-09-01'
+  AND starttime < '2012-10-01'
+GROUP BY 1
+ORDER BY 2

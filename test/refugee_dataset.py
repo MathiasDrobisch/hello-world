@@ -1,4 +1,4 @@
-# Import modules
+# STILL NOT POSSIBLE TO IMPORT DW
 import datadotworld as dw
 import sys
 
@@ -20,4 +20,4 @@ for r in resources:
     pp.pprint(r['format'])
 pp.pprint('\ntype of file:')
 for r in resources:
-    pp.pprint(r['format'])    
+    pp.pprint(r['format'])
