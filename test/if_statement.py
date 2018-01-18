@@ -23,7 +23,7 @@ print('You see 5 is not included in the range')
 print('Now comes a for a check of prime numbers, range to be checked defined by the user:')
 user_input = int(input("please input a number between 1-100: "))
 # break clause and loops
-for n in range(2,user_input):12th, 11 - 12 am # range is not inclusive of the endings, i.e. 2 and user_input in this case!
+for n in range(2,user_input): # range is not inclusive of the endings, i.e. 2 and user_input in this case!
     for x in range(2,n):
         if n % x == 0:
             print(n, 'equals', x, '*', n//x)
@@ -34,3 +34,5 @@ for n in range(2,user_input):12th, 11 - 12 am # range is not inclusive of the en
 # When used with a loop, the else clause has more in common with the else clause of
 # a try statement than it does that of if statements: a try statement’s else clause runs when no exception occurs,
 # and a loop’s else clause runs when no break occurs.
+tel = {'jack': 4098, 'sape': 4139}
+print(tel)
