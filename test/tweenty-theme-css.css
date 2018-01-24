@@ -1,0 +1,557 @@
+/*
+	Theme Name: Astrid Maier
+	Version: 1.1
+	Author: HÃ¼hnlein & HÃ¼hnlein
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,800,900);
+@import 'src/css/reset.css';
+@import 'src/css/text.css';
+@import 'src/css/animation.css';
+
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+background: #fff;
+color: #151515;
+}
+
+.section{
+padding:180px 0px;
+width: 100%;
+}
+
+.blueskin{
+background-color:#E6F1FC;
+}
+
+.paisley{
+background-color:#E6F1FC !important;
+background-image:url('src/img/pattern.png');
+}
+
+.strips{
+background-color:#E6F1FC !important;
+background-image:url('src/img/texture.jpg');
+}
+
+.off{
+display:none;
+}
+
+
+/* `Misc Classes
+----------------------------------------------------------------------------------------------------*/
+
+.align_center {
+text-align: center;
+}
+
+.align_right {
+text-align: right;
+}
+
+.hide_me{
+display: none !important;
+}
+
+/* `Main Styles
+----------------------------------------------------------------------------------------------------*/
+
+.accordion ul{
+border-top: 1px solid #999;
+margin-top: 80px;
+}
+
+.st-accordion{
+width:100%;
+}
+.st-accordion ul li{
+height: 80px;
+border-bottom: 1px solid #999;
+overflow: hidden;
+}
+.st-accordion ul li:first-child{
+border-top:none;
+}
+
+.st-accordion ul li > a{
+display: block;
+text-transform:uppercase;
+font-weight:600;
+text-decoration:none;
+position: relative;
+line-height: 80px;
+outline:none;
+font-family: 'Garamond-Italic';
+font-size: 21px;
+text-transform:uppercase;
+}
+
+.st-accordion ul li > a span{
+float: right;
+width: 0px;
+height: 0px;
+margin-top: 38px;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-top: 6px solid #000;
+display:inline-block;
+-webkit-transition: all 0.3s;
+}
+.st-accordion ul li > a:hover{
+}
+.st-accordion ul li > a:hover span{
+}
+.st-accordion ul li.st-open > a{
+}
+.st-accordion ul li.st-open > a span{
+-webkit-transform: rotate(180deg)
+}
+.st-content{
+padding: 5px 0px 10px 0px;
+}
+
+.st-content p{
+padding: 10px 0px;
+margin-bottom: 5px;
+}
+
+.st-content p:first-child{
+border-top: none;
+}
+
+.st-content img{
+}
+
+.accordionButton h3:after {
+content:" ";
+float: right;
+width: 0px;
+height: 0px;
+margin-top: 5px;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-top: 6px solid #000;
+display:inline-block;
+-webkit-transition: all 0.3s;
+}
+
+.on h3:after {
+-webkit-transform: rotate(180deg)
+}
+
+#hero{
+height:100%;
+width:100%;
+position: relative;
+background-color:#fff;
+background-position:top center;
+background-size:cover;
+display: table;
+}
+
+span.scroll_btn{
+width:40px;
+height:40px;
+position:absolute;
+background:url(src/img/scroll_down.svg);
+background-size:40px 40px;
+bottom:55px;
+left:50%;
+margin-left:-20px;
+opacity:0.4;
+display:inline;
+-webkit-transition: all ease-in-out 0.6s;
+z-index:99;
+}
+
+
+span.scroll_btn:hover{
+opacity:1;
+}
+
+.big_branding{
+margin: auto;
+text-align:center;
+left: 50%;
+margin-left: -30%;
+display: table-cell;
+vertical-align: middle;
+}
+
+.big_branding img{
+width: 60%
+}
+
+
+.client_image{
+width:100%;
+height:900px;
+background-color:#282828;
+background-size:cover;
+position: relative;
+background-position:center center;
+}
+
+
+.cover_box{
+background-color:rgba(230,240,250,0.7);
+position:absolute;
+bottom:0px;
+left:0px;
+width:100%;
+}
+
+
+
+header{
+width:100%;
+height:70px;
+background-color:#fff;
+position:absolute;
+top:0;
+left: 0;
+z-index:99999;
+opacity: 0;
+
+}
+
+
+.sticky{
+position: fixed;
+top:0px;
+border-bottom: solid #ccc 1px;
+opacity: 1;
+}
+
+
+.flyout{
+background-color:#e6f1fc;
+width:100%;
+height:auto;
+border-bottom: solid #ccc 1px;
+padding:80px 0px;
+z-index:9999;
+}
+
+.flyout.sticky{
+margin-top: 70px !important;
+}
+
+
+.flyout_btn{
+cursor: pointer;
+position: absolute;
+right: 0px;
+top: 5px;
+font-size: 22px;
+color:#666;
+}
+
+
+.branding{
+position:absolute;
+top:15px;
+left:50px;
+background-image:url('src/img/branding_nav.svg');
+background-repeat: no-repeat;
+background-size: cover;
+width: 370px;
+height: 30px;
+}
+
+nav{
+position:absolute;
+right:50px;
+}
+
+nav ul{
+margin-top:25px;
+margin-right: 50px;
+}
+
+nav ul li{
+display:inline-block;
+margin-left:20px;
+}
+
+nav ul li a{
+font-family: 'Garamond-Italic';
+font-size:20px;
+color:#999;
+}
+
+nav ul li a:hover, .current{
+border-bottom:1px solid #111;
+-webkit-transition:all ease-in-out 0.3s;
+color: #000;
+}
+
+
+.gravtar{
+height:220px; width:220px; border-radius:220px; margin-bottom:50px; background-color:#282828; overflow:hidden
+}
+
+
+
+.big_image_entry{
+width:100%;
+height:800px;
+background-size: cover;
+background-position: center center;
+}
+
+
+input, textarea{
+font-family: 'Garamond-Italic';
+font-size:16px;
+color:#999;
+}
+
+input, textarea{
+width: 100%;
+border: none;
+-webkit-appearance: none;
+resize: none;
+background-color: #fff;
+border-radius: 3px;
+padding-left: 10px;
+margin-bottom: 15px;
+}
+
+input{
+height: 40px;
+}
+
+textarea{
+height: 150px;
+padding-top: 10px;
+}
+
+
+
+input[type="submit"] {
+width: 35%;
+background-color:#282828;
+color:#fff !important;
+padding:10px;
+}
+
+
+
+#impressum{
+text-align: center;
+}
+
+
+.gravatr{
+	text-align: center;
+}
+
+
+
+
+
+/* Desktop
+----------------------------------------------------------------------------------------------------*/
+
+@media only screen and ( min-width: 1200px) {
+
+}
+
+
+/* Notebook
+----------------------------------------------------------------------------------------------------*/
+
+@media only screen and ( max-width: 1200px) {
+
+nav{
+display: inline-block;
+}
+
+.branding{
+position:absolute;
+left:15px;
+background-image:url('src/img/branding_mobile.svg');
+width: 195px;
+height: 25px;
+}
+}
+
+
+/* Tablet
+----------------------------------------------------------------------------------------------------*/
+
+@media only screen and ( max-width: 959px) {
+
+
+#burger{
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 25px;
+background-image: url('src/img/burger.svg');
+height: 30px;
+width: 30px;
+}
+
+.flyout_btn{
+display: none;
+}
+
+nav{
+position:absolute;
+width: 100%;
+text-align: center;
+right:0px;
+top:70px;
+background: #fff;
+display: none;
+}
+
+nav ul li{
+display:block;
+margin-left:0px;
+margin-bottom: 20px;
+width: 100%;
+height: 25px;
+margin-top:35px;
+
+}
+
+nav ul li a{
+font-family: 'Garamond-Italic';
+font-size:20px;
+color:#999;
+width: 100%;
+height: 25px;
+margin-top: 25px;
+}
+
+nav ul li:hover > a, a.current{
+border-bottom:1px solid #111;
+-webkit-transition:all ease-in-out 0.3s;
+color: #000;
+}
+
+
+}
+
+
+
+/* Smartphone
+----------------------------------------------------------------------------------------------------*/
+
+@media only screen and ( max-width: 767px) {
+
+.big_branding{
+width:90%;
+margin: auto;
+text-align:center;
+bottom:45%;
+left: 50%;
+margin-left: -45%;
+position: absolute;
+}
+
+.big_branding img{
+width: 90%
+}
+
+
+.st-accordion ul{
+margin-bottom: 0px !important;
+}
+
+.st-accordion ul:last-child{
+margin-top: 0px;
+}
+
+
+.st-accordion ul li > a{
+font-size: 16px;
+text-transform:uppercase;
+}
+
+.section{
+padding:80px 0px;
+}
+
+#impressum{
+text-align: left;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#preloader {
+position:fixed;
+overflow:hidden;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-color:#e4f0fb;
+z-index:9999;
+}
+
+
+#status{
+position: absolute;
+top: 50%;
+left: 50%;
+border-bottom: 4px solid #fff;
+border-left: 4px solid #fff;
+border-right: 3px solid #e4f0fb;
+border-top: 4px solid #e4f0fb;
+border-radius: 100%;
+height: 35px;
+width: 35px;
+margin-top: -17px;
+margin-left: -17px;
+
+z-index: 10001;
+
+-webkit-animation: rotation_l 3s infinite linear;
+-moz-animation: rotation_l 3s infinite linear;
+-o-animation: rotation_l 3s infinite linear;
+animation: rotation_l 3s infinite linear;
+}
+
+
+/*
+==============================================
+Rotation
+==============================================
+*/
+
+
+@-webkit-keyframes rotation_l {
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(-379deg);}
+}
+
+@-moz-keyframes rotation_l {
+from {-moz-transform: rotate(0deg);}
+to {-moz-transform: rotate(-379deg);}
+}
+
+@-o-keyframes rotation_l {
+from {-o-transform: rotate(0deg);}
+to {-o-transform: rotate(-379deg);}
+}
