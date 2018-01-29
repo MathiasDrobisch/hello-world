@@ -1,0 +1,184 @@
+/*
+==============================
+Hover Menu Colour
+==============================
+*/
+.navigation-top .current_page_item > a {
+	color: #af1a1a;
+	border-bottom: 1px solid;
+}
+.main-navigation a:hover {
+	color: #ffff;
+	background-color: #af1a1a;
+	border-radius: 5px;
+}
+/*
+==============================
+Page titles
+==============================
+*/
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title {
+	color: #222;
+	font-size: 16px;
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: 3em;
+}
+/*
+==============================
+Footer Color & Widget Headers
+==============================
+*/
+.site-footer {
+		font-size: 14px;
+		font-size: 0.875rem;
+		line-height: 1.6;
+		margin-top: 3em;
+		background-color: #efe3e3;
+	}
+.single-featured-image-header img {
+	display: block;
+	margin: auto;
+	height: auto;
+	max-width: 50%;
+}
+.single-featured-image-header {
+	background-color: #fafafa;
+	border-bottom: 2px solid #efe3e3;
+}
+/*
+==============================
+Navigation underlined
+==============================
+*/
+	.navigation-top {
+		bottom: 0;
+		font-size: 14px;
+		font-size: 0.875rem;
+		left: 0;
+		position: absolute;
+		right: 0;
+		width: 100%;
+		z-index: 3;
+		border-bottom: 2px solid #fff;
+	}
+/*
+==============================
+floating scroll down
+==============================
+*/
+
+.site-header .menu-scroll-down {
+        color: #fff0;
+    top: 4.5em;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url(http://kanzleiboecke.de/wp-content/uploads/2018/01/scroll_down.svg);
+    background-size: 40px 40px;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -20px;
+    opacity: 0.4;
+    display: inline;
+    -webkit-transition: all ease-in-out 0.6s;
+    z-index: 99;
+
+}
+
+.menu-scroll-down{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(60%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);
+	}
+	50% {
+		-webkit-transform: translateY(60%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
+.site-branding-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 25px;
+}
+/*
+==============================
+Nav float right % pic  ==============================
+*/
+
+.navigation-top nav {
+    margin-left: 0;
+    float: right;
+    text-align: right;
+    width: auto;
+}
+.test {
+    position: absolute;
+    left: 15px;
+    background-image: url(http://kanzleiboecke.de/wp-content/uploads/2018/01/scroll_down.svg);
+    width: 195px;
+    height: 25px;
+	  background-repeat: no-repeat;
+}
+/*
+==============================
+Kontakt formular ==============================
+*/
+/* Fields */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aaa;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #aaa;
+}
+/* Button */
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+   background-color: #BD0000;
+   border: none;
+   color: #fff;
+   font-size: 1em;
+   padding: 10px 50px;
+   text-transform: uppercase;
+   font-weight: normal;
+}
