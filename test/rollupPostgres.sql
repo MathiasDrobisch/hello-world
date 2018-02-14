@@ -1,4 +1,4 @@
-
+-- ROLLUP function creates aggregates for specified columns, CUBE does it for all combinations!
 
 select facid, extract(month from starttime) as month, sum(slots) as slots
 	from cd.bookings

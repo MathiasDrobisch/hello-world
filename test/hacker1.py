@@ -4,7 +4,7 @@ def get_total_cost_of_meal():
     # tip percentage
     tip_percent = int(input())
     # tax percentage
-    tax_percent = int(input())
+    tax_percent = int(input()
 
     # Write your calculation code here
     tip = meal_cost*tip_percent/100# calculate tip
@@ -18,7 +18,3 @@ def get_total_cost_of_meal():
 
 # Print your result
 print("The total meal cost is " + get_total_cost_of_meal() + " dollars.")
-
-n = int(input())
-for i in range(n):
-    print(i**2)
