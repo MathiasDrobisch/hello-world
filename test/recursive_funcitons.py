@@ -10,7 +10,7 @@ def factorial(n):
       return n * factorial(n-1)
 
 if __name__ == "__main__": # this is trigger if the script is exerised on its own,
-#not imported into another script to run their, than this block wont return
+#not imported into another script to run there, than this block wont return
     n = int(input().strip())
     result = factorial(n)
     print(result)
